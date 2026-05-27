@@ -116,7 +116,7 @@ main {
 .brand, .brand-mark, .session-pill, .nav nav, .ghost-button, .primary-button,
 .panel-title, .form-title, .input-icon, .score-panel small, .recommendation,
 .insight-strip div, .actor-strip article, .workflow-band div, .evidence-band div,
-.security-note, .hero-proof, .auth-card-badge {
+.security-note, .hero-proof {
   align-items: center;
   display: flex;
 }
@@ -436,23 +436,6 @@ main {
   position: absolute;
   right: -1px;
   top: -1px;
-}
-
-.auth-card-badge {
-  background: var(--dark-panel);
-  border-radius: 999px;
-  color: #dffdf7;
-  gap: 8px;
-  justify-content: center;
-  justify-self: start;
-  min-height: 34px;
-  padding: 7px 13px;
-  font-size: 0.82rem;
-  font-weight: 900;
-}
-
-.auth-card-badge svg {
-  color: #5eead4;
 }
 
 .form-title, .panel-title {

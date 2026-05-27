@@ -96,10 +96,6 @@ export default function AuthPage() {
       </div>
 
       <form className="auth-card" onSubmit={submit}>
-        <div className="auth-card-badge">
-          <Sparkles size={16} />
-          <span>Competition Demo Portal</span>
-        </div>
         <div className="form-title">
           <LockKeyhole size={22} />
           <div>
