@@ -53,8 +53,8 @@ CLIENT_URL=http://localhost:5173
 
 Seed accounts:
 
-- Customer: `ravi@example.com` / `P@ssw0rd`
-- Officer: `officer@example.com` / `P@ssw0rd`
+- Customer: `ravi@gmail.com` / `P@ssw0rd`
+- Officer: `officer@gmail.com` / `P@ssw0rd`
 
 ## Frontend Setup
 
@@ -82,7 +82,7 @@ Authorization: Bearer <token>
 ```json
 {
   "name": "Ravi Kumar",
-  "email": "ravi@example.com",
+  "email": "ravi@gmail.com",
   "password": "P@ssw0rd",
   "role": "CUSTOMER",
   "income": 95000,
@@ -94,7 +94,7 @@ Authorization: Bearer <token>
 
 ```json
 {
-  "email": "ravi@example.com",
+  "email": "ravi@gmail.com",
   "password": "P@ssw0rd"
 }
 ```
