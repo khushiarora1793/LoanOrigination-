@@ -6,12 +6,12 @@ import { useAuth } from '../context/AuthContext.jsx';
 
 const initialForm = {
   name: '',
-  email: 'ravi@example.com',
-  password: 'P@ssw0rd',
+  email: '',
+  password: '',
   role: 'CUSTOMER',
-  income: 95000,
-  creditScore: 760,
-  branch: 'Mumbai Central'
+  income: '',
+  creditScore: '',
+  branch: ''
 };
 
 export default function AuthPage() {
@@ -72,7 +72,6 @@ export default function AuthPage() {
           </div>
         </div>
         <div className="hero-grid">
-          <div><strong>MongoDB Atlas</strong><span>Users, customers, officers, applications</span></div>
           <div><strong>Scoring model</strong><span>Income, credit score and amount pressure</span></div>
           <div><strong>Role access</strong><span>Separate customer and officer desks</span></div>
         </div>
@@ -112,17 +111,17 @@ export default function AuthPage() {
         {mode === 'register' && (
           <label>
             Name
-            <input value={form.name} onChange={(event) => update('name', event.target.value)} required />
+            <input placeholder="Enter your full name" value={form.name} onChange={(event) => update('name', event.target.value)} required />
           </label>
         )}
 
         <label>
           Email
-          <input type="email" value={form.email} onChange={(event) => update('email', event.target.value)} required />
+          <input type="email" placeholder="Enter your email address" value={form.email} onChange={(event) => update('email', event.target.value)} required />
         </label>
         <label>
           Password
-          <input type="password" value={form.password} onChange={(event) => update('password', event.target.value)} required />
+          <input type="password" placeholder="Enter your password" value={form.password} onChange={(event) => update('password', event.target.value)} required />
         </label>
 
         {mode === 'register' && (
@@ -139,11 +138,11 @@ export default function AuthPage() {
               <div className="score-panel">
                 <label>
                   Monthly income
-                  <input type="number" value={form.income} onChange={(event) => update('income', event.target.value)} />
+                  <input type="number" placeholder="Enter your monthly income" value={form.income} onChange={(event) => update('income', event.target.value)} />
                 </label>
                 <label>
                   Credit score
-                  <input type="number" min="300" max="900" value={form.creditScore} onChange={(event) => update('creditScore', event.target.value)} />
+                  <input type="number" min="300" max="900" placeholder="Enter your credit score" value={form.creditScore} onChange={(event) => update('creditScore', event.target.value)} />
                 </label>
                 <div className="score-meter">
                   <span style={{ width: `${previewScore}%` }} />
@@ -153,7 +152,7 @@ export default function AuthPage() {
             ) : (
               <label>
                 Branch
-                <input value={form.branch} onChange={(event) => update('branch', event.target.value)} />
+                <input placeholder="Enter your branch name" value={form.branch} onChange={(event) => update('branch', event.target.value)} />
               </label>
             )}
           </>
