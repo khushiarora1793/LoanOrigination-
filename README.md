@@ -1,4 +1,4 @@
-# Loan Origination & Approval System
+# Loan Origination & Approval System :
 
 A full-stack loan management platform built with Node.js, Express, MongoDB, Mongoose and React. Customers can register, apply for loans and track status. Loan officers can review applications with eligibility scoring evidence and approve or reject each case.
 
